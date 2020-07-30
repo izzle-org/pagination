@@ -1,0 +1,5 @@
+vendor
+composer.lock
+.idea
+report
+.php_cs.cache
