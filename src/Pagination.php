@@ -18,14 +18,14 @@ class Pagination extends Model
     protected array $data = [];
     
     /**
-     * @var Links
+     * @var Links|null
      */
-    protected Links $links;
+    protected ?Links $links = null;
     
     /**
-     * @var Meta
+     * @var Meta|null
      */
-    protected Meta $meta;
+    protected ?Meta $meta = null;
     
     /**
      * @return array
@@ -47,9 +47,9 @@ class Pagination extends Model
     }
     
     /**
-     * @return Links
+     * @return Links|null
      */
-    public function getLinks(): Links
+    public function getLinks(): ?Links
     {
         return $this->links;
     }
@@ -66,9 +66,9 @@ class Pagination extends Model
     }
     
     /**
-     * @return Meta
+     * @return Meta|null
      */
-    public function getMeta(): Meta
+    public function getMeta(): ?Meta
     {
         return $this->meta;
     }

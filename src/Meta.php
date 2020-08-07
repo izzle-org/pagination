@@ -71,9 +71,9 @@ class Meta extends Model
     }
     
     /**
-     * @return int
+     * @return int|null
      */
-    public function getFrom(): int
+    public function getFrom(): ?int
     {
         return $this->getFirstItem();
     }
@@ -106,9 +106,9 @@ class Meta extends Model
     }
     
     /**
-     * @return int
+     * @return int|null
      */
-    public function getTo(): int
+    public function getTo(): ?int
     {
         return $this->getLastItem();
     }
@@ -175,6 +175,9 @@ class Meta extends Model
         return $this->getCurrentPage() < $this->getLastPage();
     }
     
+    /**
+     * @return int
+     */
     public function countOnPage(): int
     {
         if ($this->hasMorePages()) {
@@ -207,12 +210,12 @@ class Meta extends Model
     {
         return new PropertyCollection([
             new PropertyInfo('offset', 'int'),
-            new PropertyInfo('currentPage', 'int'),
-            new PropertyInfo('from', 'int'),
-            new PropertyInfo('lastPage', 'int'),
             new PropertyInfo('perPage', 'int'),
-            new PropertyInfo('to', 'int'),
             new PropertyInfo('total', 'int'),
+            new PropertyInfo('currentPage', 'int'),
+            new PropertyInfo('lastPage', 'int'),
+            new PropertyInfo('from', 'int'),
+            new PropertyInfo('to', 'int'),
             new PropertyInfo('path', 'string', null)
         ]);
     }
