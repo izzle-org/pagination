@@ -19,7 +19,7 @@
     "require": {
         "php": ">=7.4",
         "ext-json": "*",
-        "izzle/model": "^0.9.0"
+        "izzle/model": "^0.10.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^7",
