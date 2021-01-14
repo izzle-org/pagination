@@ -3,6 +3,10 @@ CHANGELOG
 
 This changelog references the relevant changes (bug and security fixes)
 
+* 0.1.1 (2021-01-14)
+
+    * feature [Lib] Added PHP 8.0 Support
+
 * 0.1.0 (2020-11-17)
 
     * change [Lib] Push to new major model lib
