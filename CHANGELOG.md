@@ -3,6 +3,10 @@ CHANGELOG
 
 This changelog references the relevant changes (bug and security fixes)
 
+* 0.2.0 (2022-09-12)
+
+    * Added PHP 8.1 compatibility
+
 * 0.1.1 (2021-01-14)
 
     * feature [Lib] Added PHP 8.0 Support
