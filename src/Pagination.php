@@ -47,6 +47,22 @@ class Pagination extends Model
     }
     
     /**
+     * @param Model $item
+     * @param string|null $key
+     * @return $this
+     */
+    public function addData(Model $item, ?string $key = null): self
+    {
+        if ($key === null) {
+            $this->data[] = $item;
+        } else {
+            $this->data[$key] = $item;
+        }
+    
+        return $this;
+    }
+    
+    /**
      * @return Links|null
      */
     public function getLinks(): ?Links

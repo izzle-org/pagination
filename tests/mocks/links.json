@@ -1,0 +1,6 @@
+{
+    "first": "http://www.foo.bar/?page=1",
+    "last": "http://www.foo.bar/?page=3",
+    "prev": "http://www.foo.bar/?page=1",
+    "next": "http://www.foo.bar/?page=3"
+}
