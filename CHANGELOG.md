@@ -3,6 +3,10 @@ CHANGELOG
 
 This changelog references the relevant changes (bug and security fixes)
 
+* 0.2.1 (2022-09-12)
+  
+    * Fixed missing addData method on Pagination Class
+
 * 0.2.0 (2022-09-12)
 
     * Added PHP 8.1 compatibility
